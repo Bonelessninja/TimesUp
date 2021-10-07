@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13966, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: TimesUp
+  m_EditorClassIdentifier: 
+  templateScene: {fileID: 102900000, guid: 1fe15ccfe39b8354c87a0950b2326a2f, type: 3}
+  templateName: 
+  description: 
+  preview: {fileID: 0}
+  dependencies:
+  - dependency: {fileID: 9100000, guid: 56fe44a2ef005d14d9f90447574ea7eb, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: 69a392a1931edcd44a7ba110c9bb0601, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: b4e0258916a04c74d8ae570990f5e3f2, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: 3d10eed31abde60498f3f03903a91b5b, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: b52b8a0349fa9fd498fb38035aa54759, type: 2}
+    instantiationMode: 0
+  templatePipeline: {fileID: 0}
+  addToDefaults: 0
