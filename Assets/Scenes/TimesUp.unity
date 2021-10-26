@@ -14979,6 +14979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpHight: 7
   xspeed: 3
+  xspeedSprint: 6
   zspeed: 3
 --- !u!114 &1683139179
 MonoBehaviour:
