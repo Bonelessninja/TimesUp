@@ -7,6 +7,7 @@ public class playercontroller : MonoBehaviour
     
     public float jumpHight = 0;
     public float xspeed = 0;
+    public float xspeedSprint = 0;
     public float zspeed = 0;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,11 @@ public class playercontroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        if(Input.GetKey(KeyCode.W) && (Input.GetKey(KeyCode.LeftShift)))
+        {
+            this.transform.Translate(new Vector3(xspeedSprint, 0, 0) * Time.deltaTime);
+        }
+        else if (Input.GetKey(KeyCode.W))
         {
             this.transform.Translate(new Vector3(xspeed, 0, 0)* Time.deltaTime);
         }
@@ -40,10 +45,6 @@ public class playercontroller : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow))
         {
             this.transform.Translate(new Vector3(xspeed, 0, zspeed) * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.LeftControl))
-        {
-            this.transform.Translate(new Vector3(6, 0, 0) * Time.deltaTime);
         }
     }
 }
