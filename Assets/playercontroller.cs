@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class playercontroller : MonoBehaviour
 {
-
+    
     public float jumpHight = 0;
     public float xspeed = 0;
     public float zspeed = 0;
     // Start is called before the first frame update
     void Start()
     {
-        
+     
     }
 
     // Update is called once per frame
@@ -41,7 +41,7 @@ public class playercontroller : MonoBehaviour
         {
             this.transform.Translate(new Vector3(xspeed, 0, zspeed) * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftControl))
         {
             this.transform.Translate(new Vector3(6, 0, 0) * Time.deltaTime);
         }
