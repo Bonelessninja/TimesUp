@@ -41,5 +41,9 @@ public class playercontroller : MonoBehaviour
         {
             this.transform.Translate(new Vector3(xspeed, 0, zspeed) * Time.deltaTime);
         }
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            this.transform.Translate(new Vector3(6, 0, 0) * Time.deltaTime);
+        }
     }
 }
